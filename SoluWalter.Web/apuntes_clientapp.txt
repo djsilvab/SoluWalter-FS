@@ -1,0 +1,3 @@
+ng new clientapp --style scss --routing --skip-tests
+ng g module ui --module app.module
+ng g component ui/layout

@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Login</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <form (ngSubmit)="loginUser()" #userForm="ngForm">
+                <div class="form-group">
+                    <label for="Usuario">Usuario</label>
+                    <input type="text" class="form-control" [(ngModel)]="user.username" name="Usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" [(ngModel)]="user.password" name="Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" [disabled]="!userForm.form.valid">Ingresar</button>&nbsp;
+                    <button type="button" class="btn btn-info" [routerLink]="['/users/registrar']">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

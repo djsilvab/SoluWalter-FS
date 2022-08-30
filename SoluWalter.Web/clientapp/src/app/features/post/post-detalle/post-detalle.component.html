@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>{{ post.titulo }}</h1>
+    <dl class="list">
+        <dt>Descripcion</dt>
+        <dd>{{ post.descripcion }}</dd>
+        <dt>Autor</dt>
+        <dd>{{ post.autor }}</dd>
+        <dt>Categoria</dt>
+        <dd>{{ post.categoria }}</dd>
+    </dl>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <a [routerLink]="['/posts/actualizar', post.id]" class="btn btn-success">Actualizar</a>&nbsp;
+        <a [routerLink]="['/posts']" class="btn btn-info">Ver Posts</a>
+    </div>
+</div>
